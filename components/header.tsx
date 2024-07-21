@@ -44,7 +44,7 @@ export const Header = ({
           }
         }
       } catch (error) {
-        console.log("Error notif:", error);
+        console.error("Error notification:", error);
       }
 
       setLoading(false);
@@ -98,7 +98,7 @@ export const Header = ({
           >
             {editing && !loading ? (
               <Input
-                type="email"
+                type="text"
                 value={documentTitle}
                 ref={inputRef}
                 placeholder="Enter title"

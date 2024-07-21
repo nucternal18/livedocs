@@ -1,4 +1,3 @@
-import { SignedIn, UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,7 +9,7 @@ import { dateConverter } from "@/lib/utils";
 import { AddDocumentBtn } from "@/components/add-document-btn";
 import { DeleteModal } from "@/components/delete-modal";
 import { Header } from "@/components/header";
-import { Notifications } from "@/components/notifications";
+
 
 const Documents = async () => {
   const clerkUser = await currentUser();

@@ -30,7 +30,7 @@ export const Collaborator = ({
         updatedBy: user,
       });
     } catch (error) {
-      console.log("Error notif:", error);
+      console.error("Error notification:", error);
     }
 
     setLoading(false);
@@ -40,7 +40,7 @@ export const Collaborator = ({
     try {
       await removeCollaborator({ roomId, email });
     } catch (error) {
-      console.log("Error notif:", error);
+      console.error("Error notification:", error);
     }
   };
 
